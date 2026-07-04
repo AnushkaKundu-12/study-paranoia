@@ -23,17 +23,15 @@ instead of handing over a static list of links.
 
 One orchestrator agent coordinates four specialised sub-agents, delegating
 based on where the conversation currently is:
-```mermaid
-flowchart TD
-    U[User] --> O[Orchestrator Agent]
-
-    O --> P[Profile Agent]
-    O --> R[Roadmap Agent]
-    O --> RA[Resource Agent]
-    O --> PR[Progress Agent]
-
-    RA --> S[Search Agent (Tool)]
-```
+User
+  |
+  v
+Orchestrator Agent
+ ├── Profile Agent
+ ├── Roadmap Agent
+ ├── Resource Agent
+ │      └── Search Agent (Tool)
+ └── Progress Agent
 ### 🔹 Profile Agent
 - Collects information about the learner
 - Understands:
