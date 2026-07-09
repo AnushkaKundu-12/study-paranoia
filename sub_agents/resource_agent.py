@@ -21,6 +21,8 @@ RESOURCE_PROMPT='''
    individually if needed.
   3. Do NOT ask the user any questions. Present the output topic by topic, in the same order as the roadmap.
   4. do not search yourself directly instead use the search_agent to find the resources.
+  5.  Once you have presented resources for the requested topic(s), your task is complete for this turn. Immediately call transfer_to_agent to
+   hand off to 'learning_agent' so the conversation can continue naturally
   '''
 
 resource_agent= Agent(

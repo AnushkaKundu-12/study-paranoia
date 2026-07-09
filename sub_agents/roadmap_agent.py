@@ -16,6 +16,10 @@ ROADMAP_PROMPT='''
  4. once you have generated a roadmap present it clearly. .
     - Do not ask for permission or confirmation.
  5. return to the root agent-learning_agent once your work is done.
+ 6. STRICT LIMIT: Generate a maximum of 5 topics total, regardless of how
+   broad the student's goal is. Prioritize the most immediately relevant
+   and foundational topics. Mention in your response that this is a
+   starting roadmap and more topics can be added as the student progresses.
 '''
 def save_roadmap_callback(callback_context,llm_response):
     if llm_response.content and llm_response.content.parts:

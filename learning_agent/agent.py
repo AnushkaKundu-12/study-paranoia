@@ -16,8 +16,8 @@ ROOT_PROMPT='''
  4. progress_agent- a.tracks completed topics, suggests the next topic,
                        revises weak concepts, and keeps the student motivated.
                     b. Delegate to this agent any time the student reports progress, asks
-                       what to do next, or mentions struggling with a topic, even outside
-                       the initial profile -> roadmap -> resource sequence.
+                       what to do next, or mentions struggling with a topic,or difficulty with any topic — even if the immediately
+                       prior turn was handled by a different agent.
 RULES-   
 1. Never generate the profile, roadmap, resources or progress yourself.
 2. As soon as the roadmap is created by the roadmap_agent and the control returns to you immediately 
