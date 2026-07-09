@@ -34,6 +34,8 @@ Orchestrator Agent
  │      └── Search Agent (Tool)
  └── Progress Agent
  ```
+---
+
 ### 🔹 Profile Agent
 - Collects information about the learner
 - Understands:
@@ -130,5 +132,3 @@ The project is actively being built, with new features and improvements added in
 ## 👩‍💻 Author
 
 **Anushka Kundu** 
-<br>
- B.Tech CSE, KIIT University
